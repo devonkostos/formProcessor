@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Assignment 6</title>
+	<link href="assignment6.css" rel="stylesheet">
+	
+	<style>
+	</style>
+    
+	<script src="jquery-3.2.1.min.js"></script>
+    <script src="assignment6.js"></script>
+	
+	<script>
+	</script>
+
+</head>
+<body>
+	<div id="logo">
+		<img src="logo.jpg" alt="Computer Warehouse Logo">
+	</div>
+	
+	<h1>Create an Account</h1>
+	<span class="errMsg" id="errSubmit"></span>
+	
+		<form id="custForm" action="FormProcessor.html" method="get">
+		
+			<h2>Your Preferences</h2>
+			
+				<label for="opSys">Most Frequently Used Operating System:</label>
+					<select id="opSys" name="opSys">
+						<option value="operating system">Operating System</option>
+						<option value="windows8">Windows 8</option>
+						<option value="windows7">Windows 7</option>
+						<option value="android">Android</option>
+						<option value="macOS">Mac OS</option>
+						<option value="other">Other</option>
+					</select>
+					
+				<label for="software">Most Frequently Used Software:<label>
+					<select id="software" name="software">
+						<option value="software">Software</option>
+						<option value="games">Games</option>
+						<option value="businessApplications">Business Applications</option>
+						<option value="programmingApplications">Programming Applications</option>
+						<option value="socialNetworking">Social Networking</option>
+						<option value="other">Other</option>
+					</select>
+					
+			<h2>Customer Information</h2>
+				*Required Information<br><br>
+				
+				<label for="firstName">First Name:*</label>
+					<input type="text" id="firstName" name="firstName">
+					<span class="errMsg" id="errFirst"></span><br><br>
+					
+				<label for="lastName">Last Name:*</label>
+					<input type="text" id="lastName" name="lastName">
+					<span class="errMsg" id="errLast"></span><br><br>
+					
+				<label for="address1">Street Address 1:*</label>
+					<input type="text" id="address1" name="address1">
+					<span class="errMsg" id="errAdd1"></span><br><br>
+					
+				<label for="address2">Street Address 2:*</label>
+					<input type="text" id="address2" name="address2">
+					<span class="errMsg" id="errAdd2"></span><br><br>
+					
+				<label for="city">City:*</label>
+					<input type="text" id="city" name="city">
+					<span class="errMsg" id="errCity"></span><br><br>
+					
+				<label for="state">State:*</label>
+					<input type="text" id="state" name="state">
+					<span class="hint" id="hintState"></span>
+					<span class="errMsg" id="errState"></span><br><br>
+					
+				<label for="zip">Zip Code:*</label>
+					<input type="text" id="zip" name="zip">
+					<span class="hint" id="hintZip"></span>
+					<span class="errMsg" id="errZip"></span><br><br>
+					
+				<label for="phone">Phone:</label>
+					<input type="text" id="phone" name="phone">
+					<span class="hint" id="hintPhone"></span>
+					<span class="errMsg" id="errPhone"></span><br><br>
+					
+				<label for="email">Email Address:*</label>
+					<input type="text" id="email" name="email">
+					<span class="hint" id="hintEmail"></span>
+					<span class="errMsg" id="errEmail"></span><br><br>
+					
+				<fieldset>
+					<legend>Payment Method:*</legend>
+						<input type="radio" id="none" name="payment" value="none" checked>
+							<label for="none">None</label>
+						<input type="radio" id="visa" name="payment" value="visa">
+							<label for="visa">Visa</label>
+						<input type="radio" id="masterCard" name="payment" value="masterCard">
+							<label for="masterCard">Master Card</label>
+						<input type="radio" id="amExpress" name="payment" value="amExpress">
+							<label for="amExpress">American Express</label>
+				</fieldset><br>	
+				
+				<label for="ccNum">Credit Card Number:</label>
+					<input type="text" id="ccNum" name="ccNum">
+					<span class="hint" id="hintCC"></span>
+					<span class="errMsg" id="errCC"></span><br><br>
+					
+				<label for="expMo">Expiration Month:</label>
+					<select id="expMo" name="expMo">
+						<option value="month">Month</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+					
+				<label for="expYr">Expiration Year:</label>
+					<select id="expYr" name="expYr">
+						<option value="year">Year</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+					</select>
+					<span class="errMsg" id="errExp"></span><br><br>
+				
+				<input type="submit" value="Submit Information" id="submit">
+		</form>
+</body>
+</html>
+	
